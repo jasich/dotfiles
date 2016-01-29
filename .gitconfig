@@ -1,6 +1,6 @@
 [user]
-	name = Jace Browning
-	email = jacebrowning@gmail.com
+	name = Modustri CI
+	email = devops@modustri.com
 [core]
 	excludesfile = /opt/boxen/config/git/gitignore
 	mergeoptions = --no-ff
