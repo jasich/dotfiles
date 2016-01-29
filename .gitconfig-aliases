@@ -1,0 +1,13 @@
+[alias]
+  st = status
+  s = status
+  co = checkout
+  pul = pull
+  pl = pull
+  pulll = pull
+  p = pull
+  puhs = push
+  cbranch = rev-parse --abbrev-ref HEAD
+  pushr = !git push -u origin `git cbranch`
+  pullstash = !git add . && git stash && git pull
+  pullpop = !git add . && git stash && git pull && git stash pop

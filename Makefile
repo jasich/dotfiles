@@ -1,4 +1,4 @@
-DOTFILE_NAMES := .zshrc .gitconfig .gitignore_global
+DOTFILE_NAMES := .gitconfig-core .gitconfig-diff .gitconfig-aliases .gitignore_global
 
 ROOT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 DOTFILE_PATHS := $(DOTFILE_NAMES:%=$(ROOT_DIR)/%)
@@ -17,6 +17,9 @@ $(FLAG_PATH): $(DOTFILE_PATHS) Makefile
 		mv ~/$$file $(BACKUP_DIR)/ ; \
 		ln -s $(ROOT_DIR)/$$file ~/$$file ; \
 	done
+	# TODO: copy and example .gitconfig if one does not exist
+	# Or, append the include block into their existing .gitconfig if needed
+	#cp .gitconfig-example ~/.gitconfig
 	touch $(FLAG_PATH)
 
 .PHONY: clean
