@@ -17,5 +17,9 @@
 
   cbranch = rev-parse --abbrev-ref HEAD
   pushr = !git push -u origin `git cbranch`
+
   pullstash = !git add . && git stash && git pull
   pullpop = !git add . && git stash && git pull && git stash pop
+
+  cleanlocalbranches = "!git branch --merged | grep  -v '\\*\\|master\\|develop\\|staging' | xargs -n 1 git branch -d"
+  clb = !git cleanlocalbranches
