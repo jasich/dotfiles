@@ -13,6 +13,7 @@ Include the individual config files you want in your `~/.gitconfig`
   path = ~/.gitconfig-core
   path = ~/.gitconfig-aliases
   # path = ~/.gitconfig-diff
+  
 [user]
   name = Brian Steketee
   email = brian.steketee@modustri.com
