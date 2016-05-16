@@ -1,0 +1,9 @@
+[include]
+  path = ~/.gitconfig-core
+  path = ~/.gitconfig-aliases
+  # path = ~/.gitconfig-diff
+
+[user]
+  name = Jason Sich
+  email = jasich@gmail.com
+
