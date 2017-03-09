@@ -7,7 +7,7 @@
 [core]
   excludesfile = ~/.gitignore_global
   mergeoptions = --no-ff
-  editor = vim
+  editor = atom
 [push]
   default = simple
 [credential]

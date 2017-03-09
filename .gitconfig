@@ -7,3 +7,10 @@
   name = Jason Sich
   email = jasich@gmail.com
 
+[filter "lfs"]
+  smudge = git-lfs smudge %f
+  required = true
+  clean = git-lfs clean %f
+
+[remote "origin"]
+  prune = true
