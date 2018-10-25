@@ -3,7 +3,9 @@ To create symlinks for all dotfiles:
 ```
 $ git clone https://github.com/modustri/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles
-$ make 
+(change the name and email in .gitconfig)
+$ git commit -am "Update user information"
+$ make
 ```
 
 Include the individual config files you want in your `~/.gitconfig`
@@ -13,7 +15,7 @@ Include the individual config files you want in your `~/.gitconfig`
   path = ~/.gitconfig-core
   path = ~/.gitconfig-aliases
   # path = ~/.gitconfig-diff
-  
+
 [user]
   name = Brian Steketee
   email = brian.steketee@modustri.com

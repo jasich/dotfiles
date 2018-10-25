@@ -1,16 +1,23 @@
 [include]
-  path = ~/.gitconfig-core
-  path = ~/.gitconfig-aliases
-  # path = ~/.gitconfig-diff
+	path = ~/.gitconfig-core
+	path = ~/.gitconfig-diff
+	path = ~/.gitconfig-aliases
 
 [user]
-  name = Jason Sich
-  email = jasich@gmail.com
+	name = Jason Sich
+	email = jasich@gmail.com
+
+[hub]
+	protocol = https
+
+[credential]
+	helper = osxkeychain
 
 [filter "lfs"]
-  smudge = git-lfs smudge %f
-  required = true
-  clean = git-lfs clean %f
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
 
-[remote "origin"]
-  prune = true
+[core]
+	excludesfile = ~/.gitignore_global
